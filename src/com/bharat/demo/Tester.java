@@ -37,16 +37,3 @@ public class Tester {
 
 }
 
-class StudentMapper implements RowMapper<Student>{
-
-	@Override
-	public Student mapRow(ResultSet arg0, int arg1) throws SQLException {
-		Student student=new Student();
-		student.setId(arg0.getInt("id"));
-		student.setName(arg0.getString("name"));
-		//student.setMarks(arg0.getDouble(""));
-		return student;
-	}
-	
-	
-}
